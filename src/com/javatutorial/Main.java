@@ -106,8 +106,10 @@ public class Main {
                         break;
                     case 6:
                         quit = true;
+                        break;
                     default:
                         System.out.println("Invalid input. Please enter a number 1 - 6.");
+                        break;
                 }
             }
         }
