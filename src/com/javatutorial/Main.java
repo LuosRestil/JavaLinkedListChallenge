@@ -94,7 +94,16 @@ public class Main {
                         }
                         break;
                     case 4:
-                        i.remove();
+                        if (!playlist.isEmpty()) {
+                            i.remove();
+                            System.out.println("*****************************");
+                            System.out.println("Current song removed.");
+                            if (!i.hasNext()) {
+                                i.previous();
+                            }
+                            System.out.println("Now playing: " + i.next().getTitle());
+                            System.out.println("*****************************");
+                        }
                         break;
                     case 5:
                         System.out.println("*****************************");
